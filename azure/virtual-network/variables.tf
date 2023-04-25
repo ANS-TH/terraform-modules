@@ -92,7 +92,7 @@ variable "subnets" {
       delegations = optional(map(
         object({
           name    = string
-          actions = list(string)
+          actions = optional(list(string)
         })
       ))
     })
